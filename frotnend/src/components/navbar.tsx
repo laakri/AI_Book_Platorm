@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, BookOpen, User, Heart, ShoppingCart } from "lucide-react";
+import { ModeToggle } from "./mode-toggle";
 
 const Navbar = () => {
   return (
@@ -38,6 +39,12 @@ const Navbar = () => {
             >
               New Releases
             </a>
+            <a
+              className="transition-colors hover:text-foreground/80 text-pink-500"
+              href="/book/1"
+            >
+              Book Page
+            </a>
           </nav>
         </div>
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
@@ -64,6 +71,7 @@ const Navbar = () => {
               <ShoppingCart className="h-[1.2rem] w-[1.2rem]" />
               <span className="sr-only">Cart</span>
             </Button>
+            <ModeToggle />
             <Button variant="outline" size="sm" className="ml-4">
               Login
             </Button>
