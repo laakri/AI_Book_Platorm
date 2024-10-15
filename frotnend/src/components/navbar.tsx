@@ -41,7 +41,7 @@ const Navbar = () => {
             </a>
             <a
               className="transition-colors hover:text-foreground/80 text-pink-500"
-              href="/book/1"
+              href="/book"
             >
               Book Page
             </a>

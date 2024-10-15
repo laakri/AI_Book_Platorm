@@ -13,7 +13,7 @@ const router = createBrowserRouter([
   },
   { path: "browse", element: <Browse /> },
   { path: "new-releases", element: <NewReleases /> },
-  { path: "book/:id", element: <BookDetails /> },
+  { path: "book", element: <BookDetails /> },
 ]);
 
 export default router;
